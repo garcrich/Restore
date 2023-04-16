@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Git Projects\\React-Net\\Restore\\API\\API.csproj": {}
+    "c:\\Git Projects\\React-Net\\Restore\\API\\API.csproj": {}
   },
   "projects": {
-    "C:\\Git Projects\\React-Net\\Restore\\API\\API.csproj": {
+    "c:\\Git Projects\\React-Net\\Restore\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Git Projects\\React-Net\\Restore\\API\\API.csproj",
+        "projectUniqueName": "c:\\Git Projects\\React-Net\\Restore\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Git Projects\\React-Net\\Restore\\API\\API.csproj",
+        "projectPath": "c:\\Git Projects\\React-Net\\Restore\\API\\API.csproj",
         "packagesPath": "C:\\Users\\rg364\\.nuget\\packages\\",
-        "outputPath": "C:\\Git Projects\\React-Net\\Restore\\API\\obj\\",
+        "outputPath": "c:\\Git Projects\\React-Net\\Restore\\API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\rg364\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -21,7 +21,6 @@
           "net7.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -43,6 +42,14 @@
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[7.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "target": "Package",
+              "version": "[7.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[7.0.5, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
