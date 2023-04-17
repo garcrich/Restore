@@ -16,6 +16,10 @@ packages/
 *.log
 *.tmp
 
-# Ignore Visual Studio temporary files
+# Ignore temporary files database files
 *.db-shm
 *.db-wal
+
+# Ignore appsetings to hide sensitive data
+.appsettings.Development.json
+appsettings.json
