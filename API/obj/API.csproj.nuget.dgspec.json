@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Git Projects\\React-Net\\Restore\\API\\API.csproj": {}
+    "C:\\Git Projects\\React-Net\\Restore\\API\\API.csproj": {}
   },
   "projects": {
-    "c:\\Git Projects\\React-Net\\Restore\\API\\API.csproj": {
+    "C:\\Git Projects\\React-Net\\Restore\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Git Projects\\React-Net\\Restore\\API\\API.csproj",
+        "projectUniqueName": "C:\\Git Projects\\React-Net\\Restore\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "c:\\Git Projects\\React-Net\\Restore\\API\\API.csproj",
+        "projectPath": "C:\\Git Projects\\React-Net\\Restore\\API\\API.csproj",
         "packagesPath": "C:\\Users\\rg364\\.nuget\\packages\\",
-        "outputPath": "c:\\Git Projects\\React-Net\\Restore\\API\\obj\\",
+        "outputPath": "C:\\Git Projects\\React-Net\\Restore\\API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\rg364\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -21,6 +21,7 @@
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -44,6 +45,8 @@
               "version": "[7.0.0, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[7.0.5, )"
             },
