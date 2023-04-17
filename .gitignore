@@ -15,3 +15,7 @@ packages/
 # Ignore logs and temporary files
 *.log
 *.tmp
+
+# Ignore Visual Studio temporary files
+*.db-shm
+*.db-wal
