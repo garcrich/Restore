@@ -1,0 +1,17 @@
+# Ignore binaries and object files
+bin/
+obj/
+
+# Ignore NuGet packages
+packages/
+
+# Ignore user-specific files
+*.suo
+*.user
+
+# Ignore build artifacts
+*.msi
+
+# Ignore logs and temporary files
+*.log
+*.tmp
