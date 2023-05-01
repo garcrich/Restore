@@ -21,8 +21,10 @@ function App() {
         .then(basket => { setBasket(basket)})
         .catch(err => console.log(err))
         .finally(() => setLoading(false))
+    } else {
+      setLoading(false);
     }
-  },[]);
+  },[setBasket]);
   const [darkMode, setDarkMode] = useState(false)
   const paletteType = darkMode ? 'dark' : 'light'
   const theme = createTheme({

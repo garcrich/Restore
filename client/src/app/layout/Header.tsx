@@ -1,6 +1,7 @@
 import { ShoppingCart } from "@mui/icons-material";
 import { AppBar, Badge, Box, IconButton, List, ListItem, Switch, Toolbar, Typography } from "@mui/material";
 import { Link, NavLink } from "react-router-dom";
+import { useStoreContext } from "../context/StoreContext";
 
 const midLinks = [
   {title: 'catalog', path: '/catalog'},
@@ -26,6 +27,10 @@ interface Props {
 
 
 export default function Header({setDarkMode, darkMode}: Props) {
+  const { basket } = useStoreContext();
+  const itemCount = basket?.items.reduce((total, item) => {
+    return total += item.quantity
+  },0)
   function handleSwitch() {
     setDarkMode(!darkMode)
   }
@@ -56,7 +61,7 @@ export default function Header({setDarkMode, darkMode}: Props) {
         
         <Box display='flex' alignItems='center'>
           <IconButton component={Link} to='/basket' size='large' edge='start' color='inherit' sx={{mr: 2}}>
-              <Badge badgeContent={4} color='secondary'>
+              <Badge badgeContent={itemCount} color='secondary'>
                 <ShoppingCart />
               </Badge>
           </IconButton>
