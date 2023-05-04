@@ -1,4 +1,4 @@
-import { ContactPage } from "@mui/icons-material";
+
 import { Navigate, createBrowserRouter } from "react-router-dom";
 import HomePage from "../../features/Home/HomPage";
 import AboutPage from "../../features/about/AboutPage";
@@ -8,6 +8,8 @@ import App from "../App";
 import ServerError from "../errors/ServerError";
 import NotFound from "../errors/NotFound";
 import BasketPage from "../../features/basket/BasketPage";
+import CheckoutPage from "../../features/basket/checkout/CheckoutPage";
+import ContactPage from "../../features/contact/ContactPage";
 
 export const router = createBrowserRouter([
   {
@@ -45,6 +47,10 @@ export const router = createBrowserRouter([
       {
         path: "basket",
         element: <BasketPage />,
+      },
+      {
+        path: 'checkout',
+        element: <CheckoutPage />
       },
       {
         path: "*",
