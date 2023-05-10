@@ -8,7 +8,6 @@ import '@fontsource/roboto/700.css';
 import reportWebVitals from './reportWebVitals';
 import { RouterProvider } from 'react-router-dom';
 import { router } from './app/router/Routes';
-import { StoreProvider } from './app/context/StoreContext';
 import { CookiesProvider } from 'react-cookie';
 import { Provider } from 'react-redux';
 import { store } from './app/store/configureStore';
@@ -19,11 +18,10 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <CookiesProvider>
-    <StoreProvider>
+
       <Provider store={store}>
         <RouterProvider router={router} />
       </Provider>
-    </StoreProvider>
     </CookiesProvider>
   </React.StrictMode>
 );
