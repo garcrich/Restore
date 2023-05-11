@@ -2,10 +2,6 @@ import { TableContainer, Paper, Table, TableBody, TableRow, TableCell } from "@m
 import { currencyFormat } from "../../app/util/utils";
 import { useAppSelector } from "../../app/store/configureStore";
 
-interface Props {
-    subtotal?: number;
-}
-
 export default function BasketSummary() {
   const { basket } = useAppSelector(state => state.basket);
 

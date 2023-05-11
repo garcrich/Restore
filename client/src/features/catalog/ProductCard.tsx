@@ -9,7 +9,7 @@ import { addBasketItemAsync } from "../basket/basketSlice";
 export default function ProductCard({ product }: { product: Product }) {
   const {status} = useAppSelector(state => state.basket)
   const dispatch = useAppDispatch();
-  const { name, price, brand, pictureUrl, type } = product;
+  const { name,  brand, pictureUrl, type } = product;
 
   return (
     <Card>

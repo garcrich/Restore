@@ -5,7 +5,6 @@ import { ThemeProvider } from "@emotion/react";
 import { Outlet } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
-import { useStoreContext } from "./context/StoreContext";
 import agent from "./api/agent";
 import LoadingComponent from "./layout/LoadingComponent";
 import { useCookies } from "react-cookie";
@@ -15,7 +14,7 @@ import { setBasket } from "../features/basket/basketSlice";
 function App() {
   const dispatch = useAppDispatch();
   const [loading, setLoading] = useState(true);
-  const [buyerId, setBuyerId] = useCookies(['buyerId']);
+  const [buyerId] = useCookies(['buyerId']);
 
   useEffect(() => {
     if(buyerId) {
