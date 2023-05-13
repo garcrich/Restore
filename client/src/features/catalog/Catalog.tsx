@@ -3,9 +3,6 @@ import { useEffect } from "react";
 import LoadingComponent from "../../app/layout/LoadingComponent";
 import { fetchProductsAsync, productSelectors } from "./catalogSlice";
 import { useAppDispatch, useAppSelector } from "../../app/store/configureStore";
-import { Product } from "../../app/models/product";
-
-
 
 export default function Catalog() {
 
@@ -22,7 +19,6 @@ export default function Catalog() {
 
   return (
     <>
-      
       <ProductList products={products} />
     </>
   )

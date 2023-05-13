@@ -17,7 +17,7 @@ export const fetchProductsAsync = createAsyncThunk<Product[]>(
 )
 
 export const fetchProductAsync = createAsyncThunk<Product, number>(
-  'catalog/fetchProductsAsync',
+  'catalog/fetchProductAsync',
   async (productId) => {
     try {
       return await agent.Catalog.details(productId)
@@ -45,7 +45,18 @@ export const catalogSlice = createSlice({
     });
     builder.addCase(fetchProductsAsync.rejected, (state, action) => {
       state.status = 'idle'
-    })
+    });
+
+    builder.addCase(fetchProductAsync.pending, (state) => {
+      state.status = 'pendingFetchProduct'
+    });
+    builder.addCase(fetchProductAsync.fulfilled, (state, action) => {
+      productsAdapter.upsertOne(state, action.payload);
+      state.status = 'idle'
+    });
+    builder.addCase(fetchProductAsync.rejected, (state, action) => {
+      state.status = 'idle';
+    });
   }
 })
 
